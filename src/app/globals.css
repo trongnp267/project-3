@@ -124,5 +124,46 @@
   .menu {
     display: none;
   }
+
+  .menu.show {
+    display: block;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000065;
+    z-index: 9999;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
+  }
+
+  .menu > ul > li {
+    justify-content: space-between;
+    border-bottom: 1px solid #4949e6;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .menu > ul > li > a {
+    font-size: 14px;
+  }
+
+  .menu > ul > li ul {
+    position: static;
+    width: 100%;
+  }
+
+  .menu > ul > li ul li {
+    flex-wrap: wrap;
+  }
+
+  .menu > ul > li ul li a {
+    font-size: 14px;
+  }
 }
 /* End Header Menu */

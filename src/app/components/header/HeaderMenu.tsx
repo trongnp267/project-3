@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { FaAngleDown, FaAngleRight } from "react-icons/fa"
 
-export const HeaderMenu = () => {
+export const HeaderMenu = (props: any) => {
+  const {show} = props;
   const data = [
     {
       label: "Việc Làm IT",
@@ -91,7 +92,7 @@ export const HeaderMenu = () => {
   ]
   return (
     <>
-      <nav className="menu">
+      <nav className={"menu " + (show ? "show" : "")}>
         <ul>
           {data.map((child, index) => (
             <li key={index}>
