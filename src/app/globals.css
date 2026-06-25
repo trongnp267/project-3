@@ -13,6 +13,14 @@
   font-family: "Lexend", sans-serif;
 }
 
+input, select, textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* Conatain */
 .contain {
   width: 1185px;
