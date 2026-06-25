@@ -1,4 +1,5 @@
 import { ButtonTag } from "@/app/components/button/ButtonTag";
+import { CompanyCard } from "@/app/components/card/CompanyCard";
 import { FaSearch } from "react-icons/fa";
 
 export default function Home() {
@@ -49,6 +50,25 @@ export default function Home() {
         </div>
       </div>
       {/* End Section 1 */}
+
+      {/* Section 2 */}
+      <div className="py-[60px]">
+        <div className="contain">
+          <h2 className="font-[700] text-[28px] text-[#121212] mb-[30px] text-center">
+            Nhà tuyển dụng hàng đầu
+          </h2>
+          <div className="grid grid-cols-3 gap-x-[20px] gap-y-[20px]">
+            <CompanyCard />
+            <CompanyCard />
+            <CompanyCard />
+            <CompanyCard />
+            <CompanyCard />
+            <CompanyCard />
+            <CompanyCard />
+          </div>
+        </div>
+      </div>
+      {/* End Section 2 */}
     </>
   );
 }
