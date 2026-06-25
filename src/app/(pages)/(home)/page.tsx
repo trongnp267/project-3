@@ -12,12 +12,12 @@ export default function Home() {
           </h1>
           <form 
             action=""
-            className="flex gap-x-[15px] gap-y-[15px] mb-[30px]"
+            className="flex gap-x-[15px] gap-y-[12px] mb-[30px] flex-wrap"
           >
             <select 
               name="" 
               id=""
-              className="bg-white w-[240px] h-[56px] rounded-[4px] px-[20px] text-[#121212] font-[500] text-[16px]"
+              className="bg-white md:w-[240px] w-full h-[56px] rounded-[4px] px-[20px] text-[#121212] font-[500] text-[16px]"
             >
               <option value="ha-noi">Hà Nội</option>
               <option value="hcm">Hồ Chí Minh</option>
@@ -29,13 +29,13 @@ export default function Home() {
               className="flex-1 rounded-[4px] h-[56px] px-[20px] text-[#121212] font-[500] text-[16px] bg-white placeholder:text-[#A8A8A8]"
             />
             <button
-              className="bg-[#0088FF] rounded-[4px] w-[240px] h-[56px] flex items-center justify-center gap-[10px] font-[500] text-[16px] text-white"
+              className="bg-[#0088FF] rounded-[4px] md:w-[240px] w-full h-[56px] flex items-center justify-center gap-[10px] font-[500] text-[16px] text-white"
             >
               <FaSearch className="text-[20px]" /> Tìm Kiếm
             </button>
           </form>
           <div
-            className="flex items-center gap-x-[12px] gap-y-[12px] flex-wrap"
+            className="flex items-center gap-x-[12px] gap-y-[15px] flex-wrap"
           >
             <div className="font-[500] text-[16px] text-[#DEDEDE]">
               Mọi người đang tìm kiếm:
