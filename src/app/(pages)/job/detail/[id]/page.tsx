@@ -1,8 +1,10 @@
 import { Button1 } from "@/app/components/button/Button1";
 import { Tag1 } from "@/app/components/tag/Tag1";
 import { Tag2 } from "@/app/components/tag/Tag2";
+import { Tag3 } from "@/app/components/tag/Tag3";
+import Link from "next/link";
 import { FaBriefcase, FaUserTie } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
 
 export default function JobDetail() {
   return (
@@ -58,7 +60,43 @@ export default function JobDetail() {
                 {/* Hết Thông tin công việc */}
               </div>
               <div>
-                Phai
+                {/* Thông tin công ty */}
+                <div className="bg-white border border-[#DEDEDE] p-[20px] rounded-[8px]">
+                  <div className="flex gap-[8px] mb-[20px]">
+                    <img src="/assets/images/logo-company-2.png" alt="" className="w-[100px] aspect-[1/1] rounded-[4px] object-contain" />
+                    <div className="flex-1">
+                      <div className="font-[700] text-[18px] text-[#121212] mb-[10px]">
+                        LG CNS Việt Nam
+                      </div>
+                      <Link href="#" className="font-[400] text-[16px] text-[#0088FF] flex gap-[8px] items-center">
+                        Xem công ty <FaArrowRightLong className="text-[16px]" />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-[10px]">
+                    <Tag3
+                      className="flex justify-between"
+                      text1="Mô hình công ty"
+                      text2="Sản phẩm"
+                    />
+                    <Tag3
+                      className="flex justify-between"
+                      text1="Quy mô công ty"
+                      text2="151 - 300 nhân viên"
+                    />
+                    <Tag3
+                      className="flex justify-between"
+                      text1="Thời gian làm việc"
+                      text2="Thứ 2 - Thứ 6"
+                    />
+                    <Tag3
+                      className="flex justify-between"
+                      text1="Làm việc ngoài giờ"
+                      text2="Không có OT"
+                    />
+                  </div>
+                </div>
+                {/* Hết Thông tin công ty */}
               </div>
             </div>
           </div>
