@@ -1,4 +1,5 @@
 import { Button1 } from "@/app/components/button/Button1";
+import { InputGroup } from "@/app/components/form/InputGroup";
 import { Tag1 } from "@/app/components/tag/Tag1";
 import { Tag2 } from "@/app/components/tag/Tag2";
 import { Tag3 } from "@/app/components/tag/Tag3";
@@ -64,6 +65,39 @@ export default function JobDetail() {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum hic est minima, quos optio tenetur ea mollitia quam et laboriosam dolore obcaecati ducimus, cumque pariatur similique tempore minus veniam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium vel nesciunt quam soluta officia veritatis cupiditate nam? Voluptas ea itaque fugit dignissimos autem quod amet molestiae sed fugiat impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dicta sapiente inventore assumenda ex illum quasi porro voluptates quisquam, est nobis laudantium voluptas, ipsam dolores quia voluptatum maiores dignissimos libero?
                 </div>
                 {/* Hết Mô tả chi tiết */}
+
+                {/* Form ứng tuyển */}
+                <div className="p-[20px] bg-white border border-[#DEDEDE] rounded-[8px] mt-[20px]">
+                  <h2 className="font-[700] text-[20px] text-black mb-[20px]">
+                    Ứng tuyển ngay
+                  </h2>
+                  <form action="" className="flex flex-col gap-[15px]">
+                    <InputGroup 
+                      label="Họ tên *"
+                      name="fullName"
+                      id="fullName"
+                    />
+                    <InputGroup 
+                      label="Email *" 
+                      type="email" 
+                      name="email"
+                      id="email"
+                    />
+                    <InputGroup 
+                      label="Số điện thoại *" 
+                      name="phone"
+                      id="phone"
+                    />
+                    <InputGroup 
+                      label="File CV dạng PDF *" 
+                      type="file" 
+                      name="fileCV"
+                      id="fileCV"
+                    />
+                    <Button1 label="Gửi CV ứng tuyển" />
+                  </form>
+                </div>
+                {/* Hết Form ứng tuyển */}
               </div>
               <div>
                 {/* Thông tin công ty */}
