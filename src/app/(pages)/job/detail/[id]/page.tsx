@@ -58,6 +58,12 @@ export default function JobDetail() {
                   </div>
                 </div>
                 {/* Hết Thông tin công việc */}
+
+                {/* Mô tả chi tiết */}
+                <div className="p-[20px] bg-white border border-[#DEDEDE] rounded-[8px] mt-[20px]">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum hic est minima, quos optio tenetur ea mollitia quam et laboriosam dolore obcaecati ducimus, cumque pariatur similique tempore minus veniam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium vel nesciunt quam soluta officia veritatis cupiditate nam? Voluptas ea itaque fugit dignissimos autem quod amet molestiae sed fugiat impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate dicta sapiente inventore assumenda ex illum quasi porro voluptates quisquam, est nobis laudantium voluptas, ipsam dolores quia voluptatum maiores dignissimos libero?
+                </div>
+                {/* Hết Mô tả chi tiết */}
               </div>
               <div>
                 {/* Thông tin công ty */}
