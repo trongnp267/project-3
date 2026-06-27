@@ -3,6 +3,8 @@ import { InputGroup } from "@/app/components/form/InputGroup";
 import { Tag1 } from "@/app/components/tag/Tag1";
 import { Tag2 } from "@/app/components/tag/Tag2";
 import { Tag3 } from "@/app/components/tag/Tag3";
+import ViewerImage from "@/app/components/viewer/ViewerImage";
+import Gallery from "@/app/components/viewer/ViewerImage";
 import Link from "next/link";
 import { FaBriefcase, FaUserTie } from "react-icons/fa";
 import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
@@ -27,11 +29,14 @@ export default function JobDetail() {
                     1.000$ - 1.500$
                   </div>
                   <Button1 label="Ứng tuyển" />
-                  <div className="my-[20px] grid grid-cols-3 sm:gap-[16px] gap-[8px]">
-                    <img src="/assets/images/banner-1.png" alt="" className="rounded-[4px] object-cover" />
-                    <img src="/assets/images/banner-2.png" alt="" className="rounded-[4px] object-cover" />
-                    <img src="/assets/images/banner-3.png" alt="" className="rounded-[4px] object-cover" />
-                  </div>
+                  <ViewerImage
+                    className="my-[20px] grid grid-cols-3 sm:gap-[16px] gap-[8px]"
+                    images={[
+                      {link: "/assets/images/banner-1.png", className: "rounded-[4px] object-cover cursor-pointer"},
+                      {link: "/assets/images/banner-2.png", className: "rounded-[4px] object-cover cursor-pointer"},
+                      {link: "/assets/images/banner-3.png", className: "rounded-[4px] object-cover cursor-pointer"},
+                    ]}
+                  />
                   <div className="flex flex-col gap-[10px] mb-[10px]">
                     <Tag1
                       icon={<FaUserTie className="text-[16px]" />}
