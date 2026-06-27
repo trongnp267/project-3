@@ -13,21 +13,21 @@ export default function JobDetail() {
       <div className="pt-[30px] pb-[60px]">
         <div className="contain">
           <div>
-            <div className="grid grid-cols-[770fr_395fr] gap-[20px]">
+            <div className="grid lg:grid-cols-[770fr_395fr] gap-[20px]">
               <div>
                 {/* Thông tin công việc */}
                 <div className="p-[20px] bg-white border border-[#DEDEDE] rounded-[8px]">
-                  <h1 className="font-[700] text-[28px] text-[#121212] mb-[10px]">
+                  <h1 className="font-[700] sm:text-[28px] text-[24px] text-[#121212] mb-[10px]">
                     Front End Developer ( Javascript, ReactJS)
                   </h1>
                   <div className="font-[400] text-[16px] text-[#414042] mb-[10px]">
                     LG CNS Việt Nam
                   </div>
-                  <div className="font-[700] text-[20px] text-[#0088FF] mb-[20px]">
+                  <div className="font-[700] text-[20px] text-[#0088FF] sm:mb-[20px] mb-[10px]">
                     1.000$ - 1.500$
                   </div>
                   <Button1 label="Ứng tuyển" />
-                  <div className="my-[20px] grid grid-cols-3 gap-[16px]">
+                  <div className="my-[20px] grid grid-cols-3 sm:gap-[16px] gap-[8px]">
                     <img src="/assets/images/banner-1.png" alt="" className="rounded-[4px] object-cover" />
                     <img src="/assets/images/banner-2.png" alt="" className="rounded-[4px] object-cover" />
                     <img src="/assets/images/banner-3.png" alt="" className="rounded-[4px] object-cover" />
