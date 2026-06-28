@@ -66,6 +66,7 @@ button {
   gap: 8px;
   align-items: center;
   position: relative;
+  z-index: 999;
 }
 
 .menu > ul > li > a {
@@ -85,6 +86,7 @@ button {
   background-color: #000065;
   border-radius: 4px;
   display: none;
+  z-index: 999;
 }
 
 .menu > ul > li > ul {
