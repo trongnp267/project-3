@@ -92,6 +92,11 @@ button {
   left: 0;
 }
 
+.menu > ul > li > ul.inner-right {
+  right: 0;
+  left: auto;
+}
+
 .menu > ul > li:hover > ul {
   display: block;
 }
